@@ -13,7 +13,7 @@ function App() {
     <>
       <BrowserRouter basename="/accordian/" >
   <Routes>
-    <Route path = 'accordian' element = {<VerticalTimelineAccordion2 />} />
+    <Route path = '' element = {<VerticalTimelineAccordion2 />} />
     <Route path = 'acc' element = {<VerticalTimelineAccordion />} />
       {/* <VerticalTimelineAccordion /> */}
       
