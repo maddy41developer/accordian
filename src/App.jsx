@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import { BrowserRouter,Routes,Route} from 'react-router-dom'
 
 import VerticalTimelineAccordion from './Accordian'
 import VerticalTimelineAccordion2 from './Accordian/Accordian2'
@@ -10,8 +11,14 @@ function App() {
 
   return (
     <>
+      <BrowserRouter basename="/accordian/" >
+  <Routes>
+    <Route path = 'accordian' element = {<VerticalTimelineAccordion2 />} />
+    <Route path = 'acc' element = {<VerticalTimelineAccordion />} />
       {/* <VerticalTimelineAccordion /> */}
-      <VerticalTimelineAccordion2 />
+      
+         </Routes>
+    </BrowserRouter>
     </>
   )
 }
